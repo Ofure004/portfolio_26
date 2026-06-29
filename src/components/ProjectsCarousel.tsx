@@ -64,7 +64,7 @@ export default function ProjectsCarousel({
       className="relative overflow-hidden bg-black text-white"
       style={{
         minHeight: "auto",
-        padding: "6rem 2rem",
+        padding: "clamp(3rem, 6vw, 6rem) clamp(1rem, 3vw, 2rem)",
       }}
     >
       <div>
@@ -87,7 +87,7 @@ export default function ProjectsCarousel({
           <div
             ref={carouselRef}
             className="relative w-full cursor-none overflow-hidden"
-            style={{ height: "60vh" }}
+            style={{ height: "clamp(35vh, 50vw, 60vh)" }}
             onMouseMove={handleMouseMove}
             onMouseEnter={() => setCursorVisible(true)}
             onMouseLeave={() => setCursorVisible(false)}

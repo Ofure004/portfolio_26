@@ -31,6 +31,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: "Satoshi", sans-serif;
+  --breakpoint-3xl: 1805px;
 }
 
 body {

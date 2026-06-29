@@ -19,7 +19,6 @@ export const projects: Project[] = [
       "TypeScript",
       "Tailwind CSS",
       "TanStack Query",
-      "Google Maps API",
       "React Paystack",
       "REST APIs",
     ],
