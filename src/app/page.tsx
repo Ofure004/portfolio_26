@@ -112,11 +112,10 @@ export default function Home() {
             Frontend Engineer
           </h2>
           <p className="text-lg sm:text-xl md:text-3xl leading-tight max-w-3xl font-bold">
-            Hi, I&apos;m Ofure — a Lagos-based Frontend Engineer dedicated to
-            crafting interfaces that feel natural and intuitive. With two years
-            of professional experience, I focus on the subtle, meaningful
-            details that define a premium user experience and bring products to
-            life.
+            Hi, I&apos;m Ofure — a Frontend Engineer dedicated to crafting
+            interfaces that feel natural and intuitive. With two years of
+            professional experience, I focus on the subtle, meaningful details
+            that define a premium user experience and bring products to life.
           </p>
         </motion.div>
         {/* Large Name */}

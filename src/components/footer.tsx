@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="bg-black text-white px-8 pt-16 md:pt-24 overflow-hidden"
+      className="bg-black text-white px-8 pt-16 md:pt-24 overflow-hidden shadow-[0_500px_0_500px_black]"
     >
       {/* CTA */}
       <div className="mb-16 md:mb-24 border-t border-white/20 pt-10">
@@ -24,7 +24,7 @@ export default function Footer() {
           <p className="text-lg sm:text-xl uppercase tracking-widest mb-1 sm:mb-2 text-white/70">
             Get in Touch
           </p>
-          <p className="text-base sm:text-lg h-16 sm:h-24 text-white mb-2">
+          <p className="text-base sm:text-lg h-20 sm:h-24 text-white mb-2">
             Got a project idea, want to collaborate, or just want to build
             something cool together? I&apos;d love to hear from you! Don&apos;t
             be shy, get in touch
