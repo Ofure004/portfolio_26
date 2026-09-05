@@ -9,9 +9,9 @@ interface PreloaderProps {
 
 export default function Preloader({ onComplete }: PreloaderProps) {
   const [progress, setProgress] = useState(0);
-  const [phase, setPhase] = useState<
-    "loading" | "extend" | "drape" | "done"
-  >("loading");
+  const [phase, setPhase] = useState<"loading" | "extend" | "drape" | "done">(
+    "loading",
+  );
 
   // Simulate loading progress
   useEffect(() => {
@@ -63,7 +63,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       {/* Centered loading content */}
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Percentage text — fades out when loading completes */}
-        <motion.span
+        {/* <motion.span
           className="absolute text-sm font-bold tracking-widest text-black uppercase"
           style={{ marginTop: -24 }}
           animate={
@@ -74,7 +74,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
           transition={{ duration: 0.3 }}
         >
           {progress}%
-        </motion.span>
+        </motion.span> */}
 
         {/* Progress bar track — only visible during loading */}
         {phase === "loading" && (

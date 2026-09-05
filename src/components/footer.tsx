@@ -47,7 +47,7 @@ export default function Footer() {
             out my resume.
           </p>
           <a
-            href="/EHIREMHEN OFURE RESUME.pdf"
+            href="/EHIREMHEN_OFURE_RESUME.pdf"
             download
             className="w-33.75 flex items-center gap-1 relative text-base after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:scale-x-100 font-bold uppercase tracking-wide cursor-pointer"
           >

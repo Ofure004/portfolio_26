@@ -53,3 +53,56 @@ body {
 .animate-bounce-slow {
   animation: bounce-slow 2s ease-in-out infinite;
 }
+
+.reference-label {
+  margin-bottom: 1.45rem;
+  color: rgb(0 0 0 / 0.42);
+  font-size: clamp(0.85rem, 1.1vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.reference-copy {
+  font-size: clamp(1.1rem, 1.27vw, 1.42rem);
+  font-weight: 650;
+  line-height: 1.38;
+  letter-spacing: -0.025em;
+}
+
+.about-mark {
+  position: relative;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  transition: transform 400ms ease;
+}
+
+.about-mark:hover {
+  transform: rotate(45deg);
+}
+
+.about-mark::before,
+.about-mark::after {
+  position: absolute;
+  inset: 0;
+  border-radius: 100% 0 100% 0;
+  background: black;
+  content: "";
+  transform: rotate(45deg) scaleX(0.42);
+}
+
+.about-mark::after {
+  transform: rotate(135deg) scaleX(0.42);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

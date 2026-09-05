@@ -7,8 +7,9 @@ import ProjectsCarousel from "@/components/ProjectsCarousel";
 import ProjectDetailOverlay from "@/components/ProjectDetailOverlay";
 import Footer from "@/components/footer";
 import Preloader from "@/components/Preloader";
+import PortfolioNav from "@/components/PortfolioNav";
+import HomeLink from "@/components/HomeLink";
 import { projects } from "@/components/projects/data";
-import { Download } from "lucide-react";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -54,52 +55,8 @@ export default function Home() {
           animate={!isLoading ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
         >
-          {/* Logo placeholder */}
-          <div></div>
-          <ul className="flex flex-col items-end gap-1.5 sm:gap-2 text-base sm:text-xl font-bold tracking-wide uppercase text-[#666]/70">
-            <li>
-              <button
-                onClick={() =>
-                  document
-                    .getElementById("work")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-                className="uppercase relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-black after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-black"
-              >
-                Work
-              </button>
-            </li>
-            {/* <li>
-              <a
-                href="#about"
-                className="relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-black after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-black"
-              >
-                About
-              </a>
-            </li> */}
-            <li>
-              <button
-                onClick={() =>
-                  document
-                    .getElementById("contact")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-                className="cursor-pointer uppercase relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-black after:transition-transform after:duration-300 hover:after:scale-x-100 hover:text-black"
-              >
-                Contact
-              </button>
-            </li>
-            <li>
-              <a
-                href="/EHIREMHEN OFURE RESUME.pdf"
-                download
-                className="lowercase text-black cursor-pointer flex gap-1 relative after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-black after:transition-transform after:duration-300 hover:after:scale-x-100"
-              >
-                resume
-                <Download size={24} />
-              </a>
-            </li>
-          </ul>
+          <HomeLink />
+          <PortfolioNav />
         </motion.nav>
         {/* Hero Content */}
         <motion.div
@@ -112,7 +69,7 @@ export default function Home() {
             Frontend Engineer
           </h2>
           <p className="text-lg sm:text-xl md:text-3xl leading-tight max-w-3xl font-bold">
-            Hi, I&apos;m Ofure — a Frontend Engineer dedicated to crafting
+            Hi! I&apos;m Ofure, a Frontend Engineer dedicated to crafting
             interfaces that feel natural and intuitive. With two years of
             professional experience, I focus on the subtle, meaningful details
             that define a premium user experience and bring products to life.
